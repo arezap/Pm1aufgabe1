@@ -6,6 +6,10 @@ import org.junit.Test;
 
 public class LinkedListTest {
 
+	/**
+	 * diese Methode testet ob die Elemente eingefügt worden sind.
+	 */
+
 	@Test
 	public void testAdd() {
 		Console console1 = new Console(11);
@@ -18,6 +22,12 @@ public class LinkedListTest {
 		assertEquals(console3, linkedListe.get(2));
 
 	}
+	
+	
+         /**
+	 * diese Methode testet ob der Anzahl angegebene elemente mit Anzahl der
+	 * elemente in der Liste das gleiche ist .
+	 */
 
 	@Test
 	public void testSize() {
@@ -28,6 +38,11 @@ public class LinkedListTest {
 		linkedListe.add(console2);
 		assertEquals(2, linkedListe.size());
 	}
+	
+	/**
+	 * diese Methode testet ob das gesuchte Element an der angegebene Position
+	 * mit der zurück gegebenes Elment übereinstimmt.
+	 */
 
 	@Test
 	public void testGet() {
@@ -40,6 +55,10 @@ public class LinkedListTest {
 		linkedListe.add(console3);
 		assertEquals(console2, linkedListe.get(1));
 	}
+	/**
+	 * diese Methode testet ob das angegebene Element an der angegebene Position
+	 * gelöscht worden ist.
+	 */
 
 	@Test
 	public void testRemove() {
@@ -52,6 +71,10 @@ public class LinkedListTest {
 		linkedListe.add(console3);
 		assertEquals(console3, linkedListe.remove(2));
 	}
+	
+	/**
+	 * diese Methode testet ob das gesuchte Element Vorhanden ist worden ist..
+	 */
 
 	@Test
 	public void testContains() {
