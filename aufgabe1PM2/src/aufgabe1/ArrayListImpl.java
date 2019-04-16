@@ -1,4 +1,10 @@
 package aufgabe1;
+/**
+ * Diese Klasse implementiert das generische Interface Listen
+ * 
+ * @author arezoo Pashaeefam
+  @author pouria Jahan
+ */
 
 public class ArrayListImpl<T extends Consolable> implements Listen<T>
 {
