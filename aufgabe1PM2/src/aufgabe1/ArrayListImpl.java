@@ -5,13 +5,6 @@ public class ArrayListImpl<T extends Consolable> implements Listen<T>
 	private Object[] _array = new Object[0];
 	//private final int _anfangskapazität;
 	private int _size = 0;
-	
-	/**
-	 * Initialisiert eine Array-List
-	 * @param type 
-	 * 				Der Typ des Arrays
-	 */
-	
 
 	
 	/**
@@ -19,8 +12,6 @@ public class ArrayListImpl<T extends Consolable> implements Listen<T>
 	 *  
 	 *  @param element 
 	 *  				Das Element welches gesetzt wird
-	 *  @param pos 
-	 *  				Die Position an welcher das Element gesetzt wird
 	 */
 	@Override
 	public void addElem(T element) throws IllegalArgumentException
@@ -52,7 +43,7 @@ public class ArrayListImpl<T extends Consolable> implements Listen<T>
 	}
 
 	/**
-	 *  Löscht ein Element an einer Position Stelle 
+	 *  Löscht ein Element an einer Position Stelle und gibt es zurück
 	 *  
 	 *  @param pos 	
 	 *  			Die Position an welcher das Elemnent gelöscht werden soll
