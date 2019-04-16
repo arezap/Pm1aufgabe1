@@ -34,7 +34,6 @@ public class LinkedListImpl <T extends Consolable> implements Listen<T>
 
 		}
 
-		
 		/**
 		 * Gib die Laenge der Liste zurueck.
 		 * 
