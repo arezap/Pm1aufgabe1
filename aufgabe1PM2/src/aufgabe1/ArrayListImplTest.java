@@ -58,7 +58,7 @@ public class ArrayListImplTest
 
 	/**
 	 * diese Methode testet ob das angegebene Element an der angegebene Position
-	 * gelöscht worden ist..
+	 * gelöscht worden ist.
 	 */
 
 	@Test
