@@ -7,7 +7,7 @@ import org.junit.Test;
 public class ArrayListImplTest
 {
 	/**
-	 * diese Methode testet ob die Elemente eingefügt werden.
+	 * diese Methode testet ob die Elemente eingefügt worden sind.
 	 */
 	@Test
 	public void testAdd()
