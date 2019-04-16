@@ -5,6 +5,13 @@ public class LinkedListImpl <T extends Consolable> implements Listen<T>
 	
 		Knoten<T> erster = null;
 		
+		
+		/**
+		 * Fügt ein Element am Ende der Liste ein
+		 * 
+		 * @param elem
+		 *            Das Element welches eingefügt wird	
+                 **/
 
 		@Override
 		public void addElem(T elem) {
@@ -21,10 +28,6 @@ public class LinkedListImpl <T extends Consolable> implements Listen<T>
 
 		}
 
-		
-		
-		
-		
 		
 		/**
 		 * Gib die Laenge der Liste zurueck.
@@ -58,47 +61,6 @@ public class LinkedListImpl <T extends Consolable> implements Listen<T>
 		 * 
 		 * @param pos
 		 *            Die Position an welcher das Element eingefügt wird
-		 */
-		/**			@Override
-	public void addElem(T elem) throws IllegalArgumentException
-		{
-			darfNichtNullSein(elem);
-
-			if (elem != null) {
-				Knoten<T> temp = _head;
-				if (_head == null) {
-					_head = new Knoten<T>(elem);
-				
-				} else {
-					while (temp.getNachfolger() != null) {
-						temp = temp.getNachfolger();
-					}
-					temp.setNachfolger(new Knoten<T>(elem));
-				}
-			}
-
-														
-			++_size;
-		}
-
-		@Override
-		public T removeElem(int pos) throws IllegalArgumentException
-		{
-			 mussGueltigeEinfuegepositionSein(pos);
-
-			 Knoten<T> tmp = _head;
-				for (int i = 0; i < pos - 1; i++) {
-					tmp = tmp.getNachfolger();
-
-				}
-				Knoten<T> remove = tmp.getNachfolger();
-				tmp.setNachfolger(tmp.getNachfolger().getNachfolger());
-				_size--;
-
-				return remove.getElem();
-			
-			
-			}
 		
 **/
 		
@@ -153,22 +115,6 @@ public class LinkedListImpl <T extends Consolable> implements Listen<T>
 				throw new IllegalArgumentException();
 			}
 
-			
-			
-			
-			
-	/**		mussGueltigeEinfuegepositionSein(pos);
-
-			Knoten<T> start = _head;
-
-			for (int i = 0; i <= pos; i++)
-			{
-				start = start.getNachfolger();
-			}
-
-			return start.getElem();
-			
-			**/
 		}
 		
 		
@@ -193,30 +139,6 @@ public class LinkedListImpl <T extends Consolable> implements Listen<T>
 		
 		
 		
-		
-		
-		/**	public boolean contains(T elem) {
-
-			Knoten<T> cursor = _head;
-
-			while (cursor != null) {
-				if (cursor.getElem().equals(elem)) {
-					return true;
-				} else {
-					cursor = cursor.getNachfolger();
-
-				}
-			}
-			return false;
-		}
-
-		public String toString() {
-
-			return _current.toString();
-		}
-
-
-	**/
 		/**
 		 * Prüft ob die übergebene Position gültig ist
 		 * 
