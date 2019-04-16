@@ -71,9 +71,6 @@ public class ArrayListImpl<T extends Consolable> implements Listen<T>
 		}
 		_size--;
 		return entferntesElement;
-
-
-		
 	}
 		
 	/**
