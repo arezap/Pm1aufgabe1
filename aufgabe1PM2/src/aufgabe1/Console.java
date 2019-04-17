@@ -49,9 +49,9 @@ public class Console implements Consolable
 	
 	public static void main(String[] args) {
 		LinkedListImpl<Console> linkedListe = new LinkedListImpl<>();
-		Console Console1 = new Console(11);
-		Console Console2 = new Console(42);
-		Console Console3 = new Console(22);
+		Console Console1 = new Console(17);
+		Console Console2 = new Console(23);
+		Console Console3 = new Console(38);
 
 		linkedListe.addElem(Console1);
 		linkedListe.addElem(Console2);
@@ -64,7 +64,9 @@ public class Console implements Consolable
 		linkedListe.getElem(0).toConsole();
 	
 	}
-
+	/**
+	*schreibt den Zahl auf die Konsole
+	*/
 
 	public void toConsole()
 	{
